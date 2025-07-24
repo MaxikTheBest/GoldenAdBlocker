@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0.0
 // @description  Removes 99% of ads from YouTube :) auto-loading the latest version.
-// @author       Ilomero.com inspired by goodtoob!
+// @author       Ilomero.com inspired by goodtube!
 // @updateURL    https://ilomero.com/goldenadblocker/download.user.js
 // @downloadURL  https://ilomero.com/goldenadblocker/download.user.js
 // @match        *://m.youtube.com/*
