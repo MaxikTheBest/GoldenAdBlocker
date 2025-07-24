@@ -1,1 +1,1 @@
-window.location.href = 'https://ilomero.com/goldenadblocker/main.js
+window.location.href = 'https://ilomero.com/goldenadblocker/main.js';
