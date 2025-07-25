@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GoldenAdblocker
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.2.1
 // @description  Removes 99% of ads from YouTube :) auto-loading the latest version.
 // @author       Ilomero.com inspired by goodtube!
 // @updateURL    https://ilomero.com/goldenadblocker/download.user.js
