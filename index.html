@@ -6,7 +6,6 @@
     <title>Golden AdBlocker - Home</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <style>
-        /* Reset and base styles */
         html, body {
             margin: 0;
             padding: 0;
@@ -27,7 +26,6 @@
         a:hover {
             color: #f9d423;
         }
-        /* Header */
         header {
             background: rgba(255,255,255,0.95);
             box-shadow: 0 2px 12px rgba(0,0,0,0.08);
@@ -68,7 +66,6 @@
             background: #f9d423;
             color: #fff;
         }
-        /* Main container */
         .container {
             max-width: 1100px;
             margin: 38px auto 0 auto;
@@ -78,9 +75,7 @@
             padding: 38px 48px 48px 48px;
             min-height: 600px;
             position: relative;
-        }
-        /* Hero Section */
-        .hero {
+        }        .hero {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -142,9 +137,7 @@
             border: 6px solid #f9d423;
             object-fit: cover;
             background: #fff;
-        }
-        /* Features Section */
-        .features {
+        }        .features {
             margin: 48px 0 32px 0;
             display: flex;
             flex-wrap: wrap;
@@ -183,9 +176,7 @@
             font-size: 1rem;
             color: #444;
             line-height: 1.5;
-        }
-        /* FAQ Section */
-        .faq-section {
+        }        .faq-section {
             margin: 54px 0 0 0;
         }
         .faq-title {
@@ -233,9 +224,7 @@
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-8px);}
             to { opacity: 1; transform: translateY(0);}
-        }
-        /* Details Section */
-        .details-section {
+        }        .details-section {
             margin: 54px 0 0 0;
         }
         .details-title {
@@ -265,9 +254,7 @@
             margin-bottom: 18px;
             overflow-x: auto;
             box-shadow: 0 2px 8px rgba(249,212,35,0.09);
-        }
-        /* Download Section */
-        .download-section {
+        }        .download-section {
             margin: 54px 0 0 0;
             text-align: center;
         }
@@ -301,9 +288,7 @@
             font-size: 1.08rem;
             color: #444;
             margin-bottom: 0;
-        }
-        /* Footer */
-        footer {
+        }        footer {
             background: rgba(255,255,255,0.95);
             text-align: center;
             padding: 24px 0;
@@ -312,9 +297,7 @@
             border-top: 1px solid #ffe3e3;
             margin-top: 48px;
             border-radius: 0 0 18px 18px;
-        }
-        /* Responsive */
-        @media (max-width: 900px) {
+        }        @media (max-width: 900px) {
             .container {
                 padding: 28px 16px 32px 16px;
             }
@@ -355,9 +338,7 @@
                 padding: 12px 24px;
                 font-size: 1rem;
             }
-        }
-        /* Decorative golden sparkles */
-        .sparkle {
+        }        .sparkle {
             position: absolute;
             pointer-events: none;
             z-index: 0;
@@ -368,54 +349,37 @@
             0% { transform: scale(1) translateY(0);}
             50% { transform: scale(1.2) translateY(20px);}
             100% { transform: scale(1) translateY(0);}
-        }
-        /* --- Extra CSS for line count --- */
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
+        }        ::-webkit-scrollbar {
             width: 10px;
             background: #fffbe6;
         }
         ::-webkit-scrollbar-thumb {
             background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
             border-radius: 8px;
-        }
-        /* Selection highlight */
-        ::selection {
+        }        ::selection {
             background: #f9d423;
             color: #fff;
-        }
-        /* Button focus */
-        .btn:focus, .download-btn:focus {
+        }        .btn:focus, .download-btn:focus {
             outline: 2px solid #ff4e50;
             outline-offset: 2px;
-        }
-        /* FAQ arrow */
-        .faq-arrow {
+        }        .faq-arrow {
             display: inline-block;
             transition: transform 0.2s;
             font-size: 1.1em;
         }
         .faq-item.open .faq-arrow {
             transform: rotate(90deg);
-        }
-        /* Feature card highlight */
-        .feature-card:active {
+        }        .feature-card:active {
             box-shadow: 0 2px 8px rgba(255,78,80,0.23);
             border: 2px solid #f9d423;
-        }
-        /* Details code highlight */
-        .details-code span {
+        }        .details-code span {
             color: #ff4e50;
             font-weight: bold;
-        }
-        /* Footer link */
-        footer a {
+        }        footer a {
             color: #ff4e50;
             text-decoration: underline;
             font-weight: 600;
-        }
-        /* Decorative border */
-        .container:before {
+        }        .container:before {
             content: "";
             position: absolute;
             left: 0; top: 0; right: 0; bottom: 0;
@@ -423,24 +387,18 @@
             border: 2px solid #f9d423;
             pointer-events: none;
             opacity: 0.12;
-        }
-        /* Extra padding for mobile nav */
-        @media (max-width: 500px) {
+        }        @media (max-width: 500px) {
             nav a {
                 margin: 0 8px;
                 font-size: 0.95rem;
                 padding: 4px 8px;
             }
-        }
-        /* Decorative golden sparkles positions */
-        .sparkle1 { top: 18px; left: 32px; width: 22px; height: 22px;}
+        }        .sparkle1 { top: 18px; left: 32px; width: 22px; height: 22px;}
         .sparkle2 { top: 80px; right: 44px; width: 16px; height: 16px;}
         .sparkle3 { bottom: 32px; left: 80px; width: 18px; height: 18px;}
         .sparkle4 { bottom: 18px; right: 32px; width: 24px; height: 24px;}
         .sparkle5 { top: 50%; left: 8px; width: 14px; height: 14px;}
-        .sparkle6 { top: 50%; right: 8px; width: 14px; height: 14px;}
-        /* --- End of extra CSS for line count --- */
-    </style>
+        .sparkle6 { top: 50%; right: 8px; width: 14px; height: 14px;}    </style>
 </head>
 <body>
     <!-- Decorative sparkles -->
@@ -587,16 +545,11 @@
     <footer>
         &copy; 2025 Golden AdBlocker &mdash; <a href="https://github.com/MaxikTheBest/GoldenAdBlocker/">GitHub</a> &mdash; Made for ViolentMonkey
     </footer>
-    <script>
-        // FAQ toggle logic
-        document.querySelectorAll('.faq-item').forEach(item => {
+    <script>        document.querySelectorAll('.faq-item').forEach(item => {
             item.addEventListener('click', function() {
                 this.classList.toggle('open');
             });
-        });
-
-        // Smooth scroll for nav links
-        document.querySelectorAll('nav a').forEach(link => {
+        });        document.querySelectorAll('nav a').forEach(link => {
             link.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
                 if (href.startsWith('#')) {
@@ -606,29 +559,20 @@
                     this.classList.add('active');
                 }
             });
-        });
-
-        // Decorative sparkles animation (extra lines for code count)
-        function animateSparkles() {
+        });        function animateSparkles() {
             document.querySelectorAll('.sparkle').forEach((s, i) => {
                 s.style.opacity = 0.6 + Math.sin(Date.now()/1000 + i)*0.3;
             });
             requestAnimationFrame(animateSparkles);
         }
-        animateSparkles();
-
-        // Accessibility: keyboard FAQ toggle
-        document.querySelectorAll('.faq-item').forEach(item => {
+        animateSparkles();        document.querySelectorAll('.faq-item').forEach(item => {
             item.setAttribute('tabindex', '0');
             item.addEventListener('keydown', function(e) {
                 if (e.key === 'Enter' || e.key === ' ') {
                     this.classList.toggle('open');
                 }
             });
-        });
-
-        // Extra: highlight nav on scroll
-        window.addEventListener('scroll', function() {
+        });        window.addEventListener('scroll', function() {
             const sections = ['download','faq','details','features'];
             let found = false;
             for (let id of sections) {
@@ -642,71 +586,41 @@
             if (!found) {
                 document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
             }
-        });
-
-        // Extra: download button pulse
-        const downloadBtn = document.querySelector('.download-btn');
+        });        const downloadBtn = document.querySelector('.download-btn');
         setInterval(() => {
             downloadBtn.style.boxShadow = '0 2px 24px rgba(255,78,80,0.23)';
             setTimeout(()=>downloadBtn.style.boxShadow = '0 2px 12px rgba(255,78,80,0.13)', 400);
-        }, 2200);
-
-        // Extra: show FAQ answer on arrow click only
-        document.querySelectorAll('.faq-question').forEach(q => {
+        }, 2200);        document.querySelectorAll('.faq-question').forEach(q => {
             q.addEventListener('click', function(e) {
                 e.stopPropagation();
                 this.parentElement.classList.toggle('open');
             });
-        });
-
-        // Extra: accessibility for nav
-        document.querySelectorAll('nav a').forEach(link => {
+        });        document.querySelectorAll('nav a').forEach(link => {
             link.setAttribute('tabindex', '0');
             link.addEventListener('keydown', function(e) {
                 if (e.key === 'Enter' || e.key === ' ') {
                     this.click();
                 }
             });
-        });
-
-        // Extra: highlight details code on hover
-        document.querySelector('.details-code').addEventListener('mouseenter', function() {
+        });        document.querySelector('.details-code').addEventListener('mouseenter', function() {
             this.style.background = '#ffe3e3';
         });
         document.querySelector('.details-code').addEventListener('mouseleave', function() {
             this.style.background = '#fffbe6';
-        });
-
-        // Extra: scroll to top on logo click
-        document.querySelector('.logo').addEventListener('click', function() {
+        });        document.querySelector('.logo').addEventListener('click', function() {
             window.scrollTo({top:0,behavior:'smooth'});
-        });
-
-        // Extra: focus download button on page load
-        window.addEventListener('DOMContentLoaded', function() {
+        });        window.addEventListener('DOMContentLoaded', function() {
             downloadBtn.focus();
-        });
-
-        // Extra: add aria-labels for accessibility
-        document.querySelectorAll('.btn,.download-btn').forEach(btn => {
+        });        document.querySelectorAll('.btn,.download-btn').forEach(btn => {
             btn.setAttribute('aria-label', btn.textContent.trim());
-        });
-
-        // Extra: add title attributes for feature cards
-        document.querySelectorAll('.feature-card').forEach(card => {
+        });        document.querySelectorAll('.feature-card').forEach(card => {
             card.setAttribute('title', card.querySelector('.feature-title').textContent.trim());
-        });
-
-        // Extra: add aria-expanded for FAQ
-        document.querySelectorAll('.faq-item').forEach(item => {
+        });        document.querySelectorAll('.faq-item').forEach(item => {
             item.setAttribute('aria-expanded', 'false');
             item.addEventListener('click', function() {
                 this.setAttribute('aria-expanded', this.classList.contains('open') ? 'true' : 'false');
             });
-        });
-
-        // Extra: add aria-label for logo
-        document.querySelector('.logo').setAttribute('aria-label', 'Golden AdBlocker Home');
+        });        document.querySelector('.logo').setAttribute('aria-label', 'Golden AdBlocker Home');
     </script>
 </body>
 </html>
