@@ -443,7 +443,6 @@
     </style>
 </head>
 <body>
-    <!-- Decorative sparkles -->
     <svg class="sparkle sparkle1" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#f9d423" opacity="0.7"/><circle cx="12" cy="12" r="5" fill="#fffbe6" opacity="0.8"/></svg>
     <svg class="sparkle sparkle2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="#f9d423" opacity="0.7"/><circle cx="12" cy="12" r="3" fill="#fffbe6" opacity="0.8"/></svg>
     <svg class="sparkle sparkle3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7" fill="#f9d423" opacity="0.7"/><circle cx="12" cy="12" r="2" fill="#fffbe6" opacity="0.8"/></svg>
@@ -451,7 +450,10 @@
     <svg class="sparkle sparkle5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6" fill="#f9d423" opacity="0.7"/><circle cx="12" cy="12" r="2" fill="#fffbe6" opacity="0.8"/></svg>
     <svg class="sparkle sparkle6" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6" fill="#f9d423" opacity="0.7"/><circle cx="12" cy="12" r="2" fill="#fffbe6" opacity="0.8"/></svg>
     <header>
-        <div class="logo">Golden AdBlocker</div>
+        <div class="logo">
+            Golden AdBlocker
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/YouTube_Premium_logo.svg/1200px-YouTube_Premium_logo.svg.png" alt="YouTube Premium Logo" style="height:32px;vertical-align:middle;margin-left:10px;">
+        </div>
         <div class="subtitle">99% Video Ad Blocking &mdash; Undetected, Fast, Free</div>
         <nav>
             <a href="#download" class="active">Download</a>
@@ -465,7 +467,7 @@
             <div class="hero-content">
                 <div class="hero-title">Block 99% of Video Ads, Undetected</div>
                 <div class="hero-desc">
-                    Golden AdBlocker is a powerful ViolentMonkey script that blocks video ads on  YouTube! It works in a stealthy, undetectable way, ensuring you enjoy ad-free streaming without interruptions or detection. Fast, lightweight, and always free.
+                    Golden AdBlocker is a powerful userscript that blocks video ads on YouTube! It works in a stealthy, undetectable way, ensuring you enjoy ad-free streaming without interruptions or detection. Fast, lightweight, and always free.
                 </div>
                 <div class="hero-actions">
                     <a href="#download" class="btn" id="downloadNowBtn">Download Now</a>
@@ -484,7 +486,7 @@
             <div class="feature-card">
                 <span class="feature-icon">🛡️</span>
                 <div class="feature-title">99% Video Ad Blocking</div>
-                <div class="feature-desc">Blocks almost all ads on Youtube, except age restricted and fifa videos!</div>
+                <div class="feature-desc">Blocks almost all ads on YouTube. <b>1% of videos not supported:</b> videos on channels like FIFA, age-restricted content (e.g., gambling), or similar special cases.</div>
             </div>
             <div class="feature-card">
                 <span class="feature-icon">🕵️‍♂️</span>
@@ -509,30 +511,85 @@
             <div class="feature-card">
                 <span class="feature-icon">🧑‍💻</span>
                 <div class="feature-title">Easy Install</div>
-                <div class="feature-desc">One-click install for ViolentMonkey. No configuration required.</div>
+                <div class="feature-desc">One-click install for Tampermonkey or Violentmonkey. No configuration required.</div>
             </div>
         </section>
         <section id="download" class="download-section">
             <div class="download-title">Download Golden AdBlocker</div>
             <a href="#" class="download-btn" id="downloadScriptBtn">Download Script</a>
-            <div class="download-desc">
-                <b>How to install:</b> Click the button above. Make sure you have <a href="https://violentmonkey.github.io/">ViolentMonkey</a> installed in your browser.<br>
-                The script will auto-update and block ads instantly.
+            <div class="download-desc" style="max-width:600px;margin:24px auto 0 auto;padding:18px 20px;background:#fffbe6;border-radius:10px;box-shadow:0 2px 8px rgba(249,212,35,0.09);font-size:1.08rem;line-height:1.7;">
+                <span style="color:#ff4e50;font-weight:600;">Easy installation in 3 steps:</span><br>
+                <ol style="margin:12px 0 0 18px;padding:0;">
+                    <li>Install <b>Tampermonkey</b> (recommended) or <b>Violentmonkey</b> for your browser.</li>
+                    <li>Click the <b>Download Script</b> button above and follow the prompts to add Golden AdBlocker.</li>
+                    <li>Reload YouTube and enjoy an ad-free experience instantly!</li>
+                </ol>
+                <div style="margin-top:10px;">
+                    <span style="color:#f9d423;font-weight:600;">Tips:</span> 
+                    <ul style="margin:6px 0 0 18px;padding:0;">
+                        <li>For <b>Chrome</b> and <b>Safari</b>, use Tampermonkey for best compatibility.</li>
+                        <li>On <b>iOS</b>, only Safari supports extensions like Tampermonkey.</li>
+                        <li>After installation, enable <b>Developer Mode</b> in your browser's extensions/add-ons settings and restart your browser if needed.</li>
+                    </ul>
+                </div>
+                <div style="margin-top:10px;color:#888;font-size:0.98em;">
+                    The script updates automatically and never collects your data.
+                </div>
+                <div style="margin-top:14px;color:#ff4e50;font-size:1em;">
+                    <b>Why do you need to pay on iPad/iOS?</b><br>
+                    Due to Apple's high fees for App Store and extension distribution, Tampermonkey for iOS is a paid app. This is not our decision, but a requirement from Apple and the extension publisher.
+                </div>
             </div>
         </section>
-        <div id="downloadTutorialModal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.32);z-index:9999;align-items:center;justify-content:center;">
-            <div style="background:#fffbe6;border-radius:16px;max-width:400px;width:90%;padding:32px 24px;box-shadow:0 8px 32px rgba(255,78,80,0.18);position:relative;">
-                <div style="font-size:1.5rem;font-weight:700;color:#ff4e50;margin-bottom:18px;text-align:center;">Download Tutorial</div>
-                <ol style="font-size:1.08rem;color:#444;line-height:1.7;margin-bottom:18px;">
-                    <li>Install <a href="https://violentmonkey.github.io/" target="_blank" style="color:#ff4e50;font-weight:600;">ViolentMonkey</a> or <a href="https://www.tampermonkey.net/" target="_blank" style="color:#ff4e50;font-weight:600;">Tampermonkey</a> extension in your browser.</li>
-                    <li>Click <a href="https://ilomero.com/goldenadblocker/download.user.js" target="_blank" style="color:#f9d423;font-weight:700;">here</a> to open the Golden AdBlocker script.</li>
-                    <li>On the script page, click <b>Install</b> in ViolentMonkey/Tampermonkey.</li>
-                    <li>Reload YouTube and enjoy ad-free videos!</li>
-                    <li>Updates are automatic. No further action needed.</li>
-                </ol>
-                <button id="closeTutorialBtn" style="display:block;margin:0 auto 0 auto;padding:10px 28px;font-size:1.1rem;font-weight:700;border-radius:8px;border:none;background:linear-gradient(90deg,#f9d423 0%,#ff4e50 100%);color:#fff;box-shadow:0 2px 8px rgba(255,78,80,0.13);cursor:pointer;">Close</button>
+        <div id="browserSelectModal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.32);z-index:9999;align-items:center;justify-content:center;transition:opacity 0.3s;">
+            <div style="background:#fffbe6;border-radius:16px;max-width:420px;width:95%;padding:32px 24px;box-shadow:0 8px 32px rgba(255,78,80,0.18);position:relative;animation:fadeInModal 0.4s;">
+                <div style="font-size:1.5rem;font-weight:700;color:#ff4e50;margin-bottom:18px;text-align:center;">Select Your Browser</div>
+                <div id="browserBtns" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:18px;">
+                    <button class="browser-btn" data-browser="chrome" style="background:#fff;border:2px solid #f9d423;border-radius:10px;padding:10px 18px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:box-shadow 0.2s;">
+                        <img src="https://cdn.jsdelivr.net/gh/alrra/browser-logos/src/chrome/chrome_64x64.png" alt="Chrome" width="28" height="28" style="vertical-align:middle;">
+                        <span style="font-weight:600;color:#444;">Chrome</span>
+                    </button>
+                    <button class="browser-btn" data-browser="firefox" style="background:#fff;border:2px solid #f9d423;border-radius:10px;padding:10px 18px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:box-shadow 0.2s;">
+                        <img src="https://cdn.jsdelivr.net/gh/alrra/browser-logos/src/firefox/firefox_64x64.png" alt="Firefox" width="28" height="28" style="vertical-align:middle;">
+                        <span style="font-weight:600;color:#444;">Firefox</span>
+                    </button>
+                    <button class="browser-btn" data-browser="edge" style="background:#fff;border:2px solid #f9d423;border-radius:10px;padding:10px 18px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:box-shadow 0.2s;">
+                        <img src="https://cdn.jsdelivr.net/gh/alrra/browser-logos/src/edge/edge_64x64.png" alt="Edge" width="28" height="28" style="vertical-align:middle;">
+                        <span style="font-weight:600;color:#444;">Edge</span>
+                    </button>
+                    <button class="browser-btn" data-browser="opera" style="background:#fff;border:2px solid #f9d423;border-radius:10px;padding:10px 18px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:box-shadow 0.2s;">
+                        <img src="https://cdn.jsdelivr.net/gh/alrra/browser-logos/src/opera/opera_64x64.png" alt="Opera" width="28" height="28" style="vertical-align:middle;">
+                        <span style="font-weight:600;color:#444;">Opera</span>
+                    </button>
+                    <button class="browser-btn" data-browser="safari" style="background:#fff;border:2px solid #f9d423;border-radius:10px;padding:10px 18px;display:flex;align-items:center;gap:8px;cursor:pointer;transition:box-shadow 0.2s;">
+                        <img src="https://cdn.jsdelivr.net/gh/alrra/browser-logos/src/safari/safari_64x64.png" alt="Safari" width="28" height="28" style="vertical-align:middle;">
+                        <span style="font-weight:600;color:#444;">Safari</span>
+                    </button>
+                </div>
+                <div id="browserTutorial" style="display:none;animation:fadeInModal 0.4s;">
+                </div>
+                <button id="closeBrowserModalBtn" style="display:block;margin:18px auto 0 auto;padding:10px 28px;font-size:1.1rem;font-weight:700;border-radius:8px;border:none;background:linear-gradient(90deg,#f9d423 0%,#ff4e50 100%);color:#fff;box-shadow:0 2px 8px rgba(255,78,80,0.13);cursor:pointer;">Close</button>
             </div>
         </div>
+        <style>
+            @keyframes fadeInModal {
+                from { opacity: 0; transform: translateY(30px);}
+                to { opacity: 1; transform: translateY(0);}
+            }
+            .browser-btn:focus, .browser-btn:hover {
+                box-shadow: 0 4px 16px rgba(255,78,80,0.18);
+                border-color: #ff4e50;
+            }
+            .browser-btn.shine {
+                box-shadow: 0 0 0 4px #f9d423, 0 0 16px 8px #ff4e50;
+                border-color: #ff4e50;
+                animation: shinePulse 1.2s infinite alternate;
+            }
+            @keyframes shinePulse {
+                0% { box-shadow: 0 0 0 4px #f9d423, 0 0 16px 8px #ff4e50; }
+                100% { box-shadow: 0 0 0 8px #ff4e50, 0 0 32px 16px #f9d423; }
+            }
+        </style>
         <section id="faq" class="faq-section">
             <div class="faq-title">Frequently Asked Questions</div>
             <ul class="faq-list">
@@ -546,7 +603,7 @@
                 </li>
                 <li class="faq-item">
                     <div class="faq-question"><span class="faq-arrow">▶</span>Which browsers are supported?</div>
-                    <div class="faq-answer">Any browser that supports ViolentMonkey, including Chrome, Firefox, Edge, and Opera.</div>
+                    <div class="faq-answer">Any browser that supports Tampermonkey or Violentmonkey, including Chrome, Firefox, Edge, Opera, and Safari.<br><b>Note:</b> On Chrome and Safari, use Tampermonkey for best results. On iOS, only Safari supports extensions.</div>
                 </li>
                 <li class="faq-item">
                     <div class="faq-question"><span class="faq-arrow">▶</span>Does it block banner or popup ads?</div>
@@ -558,11 +615,19 @@
                 </li>
                 <li class="faq-item">
                     <div class="faq-question"><span class="faq-arrow">▶</span>How do I update the script?</div>
-                    <div class="faq-answer">Updates are automatic via ViolentMonkey. You don't need to do anything.</div>
+                    <div class="faq-answer">Updates are automatic via Tampermonkey or Violentmonkey. You don't need to do anything.</div>
                 </li>
                 <li class="faq-item">
                     <div class="faq-question"><span class="faq-arrow">▶</span>Can I contribute or report issues?</div>
                     <div class="faq-answer">Yes! Visit our <a href="https://github.com/MaxikTheBest/goldenadblocker">GitHub page</a> to contribute or report bugs.</div>
+                </li>
+                <li class="faq-item">
+                    <div class="faq-question"><span class="faq-arrow">▶</span>What should I do after installing?</div>
+                    <div class="faq-answer">After installing the script, make sure to enable <b>Developer Mode</b> in your browser's extensions/add-ons settings and restart your browser to ensure the script works correctly.</div>
+                </li>
+                <li class="faq-item">
+                    <div class="faq-question"><span class="faq-arrow">▶</span>Why do I need to pay for Tampermonkey on iPad/iOS?</div>
+                    <div class="faq-answer">Apple charges high fees for distributing extensions and apps on iOS/iPadOS. Tampermonkey for iOS is a paid app due to these Apple fees. This is not our decision, but a requirement from Apple and the extension publisher.</div>
                 </li>
             </ul>
         </section>
@@ -573,34 +638,138 @@
                 <li>Works on all versions of Youtube!</li>
                 <li>Uses Spa injection, DOM injection, and stealthy player replacement!</li>
                 <li>Lightweight: minimal performance impact.</li>
-                <li>Auto-updates via ViolentMonkey.</li>
+                <li>Auto-updates via Tampermonkey or Violentmonkey.</li>
                 <li>No data, stats, or usage is being collected.</li>
             </ul>
-            <div class="details-code">
-                <span>// Example: YouTube ad skip logic</span><br>
-                <span>const observer = new MutationObserver(mutations => {</span><br>
-                &nbsp;&nbsp;mutations.forEach(m => {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;if (m.addedNodes) {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m.addedNodes.forEach(node => {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (node.classList && node.classList.contains('ad-showing')) {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.querySelector('.video-stream').play();<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;node.remove();<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                &nbsp;&nbsp;});<br>
-                <span>});</span><br>
-                <span>observer.observe(document.body, {childList: true, subtree: true});</span>
-            </div>
-            <div class="details-desc">
-                <b>Note:</b> The actual script is much more advanced, with stealth and multi-site support.
+            <div class="details-desc" style="margin-top:18px;">
+                <b>Note:</b> The actual script is highly advanced, using stealth and multi-site support for the best ad-free experience.
             </div>
         </section>
     </div>
     <footer>
-        &copy; 2025 Golden AdBlocker &mdash; <a href="https://github.com/MaxikTheBest/goldenadblocker">GitHub</a> &mdash; Made for ViolentMonkey
+        &copy; 2025 Golden AdBlocker &mdash; <a href="https://github.com/MaxikTheBest/goldenadblocker">GitHub</a> &mdash; Made for Tampermonkey & Violentmonkey
     </footer>
     <script>
+        const browserTutorials = {
+            chrome: {
+                name: "Chrome",
+                logo: "https://cdn.jsdelivr.net/gh/alrra/browser-logos/src/chrome/chrome_64x64.png",
+                steps: [
+                    'Install <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" style="color:#ff4e50;font-weight:600;">Tampermonkey</a> from the Chrome Web Store.',
+                    'Click <a href="https://ilomero.com/goldenadblocker/download.js" target="_blank" style="color:#f9d423;font-weight:700;">here</a> to open the Golden AdBlocker script.',
+                    'On the script page, click <b>Install</b> in Tampermonkey.',
+                    'Reload YouTube and enjoy ad-free videos!',
+                    '<span style="color:#f9d423;font-weight:600;">Tip:</span> Tampermonkey is recommended for Chrome.',
+                    '<span style="color:#ff4e50;font-weight:600;">After installation:</span> Enable <b>Developer Mode</b> in your extensions settings and restart your browser.'
+                ]
+            },
+            firefox: {
+                name: "Firefox",
+                logo: "https://cdn.jsdelivr.net/gh/alrra/browser-logos/src/firefox/firefox_64x64.png",
+                steps: [
+                    'Install <a href="https://addons.mozilla.org/firefox/addon/violentmonkey/" target="_blank" style="color:#ff4e50;font-weight:600;">Violentmonkey</a> or <a href="https://addons.mozilla.org/firefox/addon/tampermonkey/" target="_blank" style="color:#f9d423;font-weight:600;">Tampermonkey</a> from Firefox Add-ons.',
+                    'Click <a href="https://ilomero.com/goldenadblocker/download.js" target="_blank" style="color:#f9d423;font-weight:700;">here</a> to open the Golden AdBlocker script.',
+                    'On the script page, click <b>Install</b> in your userscript manager.',
+                    'Reload YouTube and enjoy ad-free videos!',
+                    '<span style="color:#ff4e50;font-weight:600;">After installation:</span> Enable <b>Developer Mode</b> in your add-ons settings and restart your browser.'
+                ]
+            },
+            edge: {
+                name: "Edge",
+                logo: "https://cdn.jsdelivr.net/gh/alrra/browser-logos/src/edge/edge_64x64.png",
+                steps: [
+                    'Install <a href="https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd" target="_blank" style="color:#ff4e50;font-weight:600;">Tampermonkey</a> or <a href="https://microsoftedge.microsoft.com/addons/detail/violentmonkey/eeagobfjdenkkddmbclomhiblgggliao" target="_blank" style="color:#f9d423;font-weight:600;">Violentmonkey</a> from Edge Add-ons.',
+                    'Click <a href="https://ilomero.com/goldenadblocker/download.js" target="_blank" style="color:#f9d423;font-weight:700;">here</a> to open the Golden AdBlocker script.',
+                    'On the script page, click <b>Install</b> in your userscript manager.',
+                    'Reload YouTube and enjoy ad-free videos!',
+                    '<span style="color:#ff4e50;font-weight:600;">After installation:</span> Enable <b>Developer Mode</b> in your extensions settings and restart your browser.'
+                ]
+            },
+            opera: {
+                name: "Opera",
+                logo: "https://cdn.jsdelivr.net/gh/alrra/browser-logos/src/opera/opera_64x64.png",
+                steps: [
+                    'Install <a href="https://addons.opera.com/extensions/details/tampermonkey-beta/" target="_blank" style="color:#ff4e50;font-weight:600;">Tampermonkey</a> or <a href="https://violentmonkey.github.io" target="_blank" style="color:#f9d423;font-weight:600;">Violentmonkey</a> from Opera Add-ons.',
+                    'Click <a href="https://ilomero.com/goldenadblocker/download.js" target="_blank" style="color:#f9d423;font-weight:700;">here</a> to open the Golden AdBlocker script.',
+                    'On the script page, click <b>Install</b> in your userscript manager.',
+                    'Reload YouTube and enjoy ad-free videos!',
+                    '<span style="color:#ff4e50;font-weight:600;">After installation:</span> Enable <b>Developer Mode</b> in your extensions settings and restart your browser.'
+                ]
+            },
+            safari: {
+                name: "Safari",
+                logo: "https://cdn.jsdelivr.net/gh/alrra/browser-logos/src/safari/safari_64x64.png",
+                steps: [
+                    'Install <a href="https://apps.apple.com/us/app/tampermonkey/id6738342400" target="_blank" style="color:#ff4e50;font-weight:600;">Tampermonkey</a> from the Mac App Store.',
+                    'Open <a href="https://ilomero.com/goldenadblocker/download.js" target="_blank" style="color:#f9d423;font-weight:700;">this link</a> in Safari.',
+                    'On the script page, click <b>Install</b> in Tampermonkey.',
+                    'Reload YouTube and enjoy ad-free videos!',
+                    '<span style="color:#f9d423;font-weight:600;">Note:</span> On iOS, only Safari supports extensions like Tampermonkey.',
+                    '<span style="color:#ff4e50;font-weight:600;">After installation:</span> Enable <b>Developer Mode</b> in your extensions settings and restart your browser.'
+                ]
+            }
+        };
+        const browserModal = document.getElementById('browserSelectModal');
+        const browserBtns = document.querySelectorAll('.browser-btn');
+        const browserTutorial = document.getElementById('browserTutorial');
+        const closeBrowserModalBtn = document.getElementById('closeBrowserModalBtn');
+
+        document.getElementById('downloadScriptBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            browserModal.style.display = 'flex';
+            browserTutorial.style.display = 'none';
+            browserTutorial.innerHTML = '';
+            document.getElementById('browserBtns').style.display = 'flex';
+            highlightDetectedBrowser();
+        });
+
+        closeBrowserModalBtn.addEventListener('click', function() {
+            browserModal.style.opacity = '0';
+            setTimeout(() => {
+                browserModal.style.display = 'none';
+                browserModal.style.opacity = '';
+            }, 200);
+        });
+
+        browserModal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.opacity = '0';
+                setTimeout(() => {
+                    this.style.display = 'none';
+                    this.style.opacity = '';
+                }, 200);
+            }
+        });
+
+        browserBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const browser = this.getAttribute('data-browser');
+                const data = browserTutorials[browser];
+                if (!data) return;
+                document.getElementById('browserBtns').style.display = 'none';
+                browserTutorial.innerHTML = `
+                    <div style="display:flex;align-items:center;gap:12px;justify-content:center;margin-bottom:12px;">
+                        <img src="${data.logo}" alt="${data.name}" width="36" height="36" style="vertical-align:middle;">
+                        <span style="font-size:1.2rem;font-weight:700;color:#ff4e50;">${data.name} Tutorial</span>
+                    </div>
+                    <ol style="font-size:1.08rem;color:#444;line-height:1.7;margin-bottom:0;padding-left:18px;text-align:left;">
+                        ${data.steps.map(s => `<li>${s}</li>`).join('')}
+                    </ol>
+                `;
+                browserTutorial.style.display = 'block';
+            });
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (browserModal.style.display === 'flex' && e.key === 'Escape') {
+                browserModal.style.opacity = '0';
+                setTimeout(() => {
+                    browserModal.style.display = 'none';
+                    browserModal.style.opacity = '';
+                }, 200);
+            }
+        });
+
         document.querySelectorAll('.faq-item').forEach(item => {
             item.addEventListener('click', function() {
                 this.classList.toggle('open');
@@ -645,25 +814,7 @@
             document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
             document.querySelector('nav a[href="#download"]').classList.add('active');
         });
-        document.getElementById('downloadScriptBtn').addEventListener('click', function(e) {
-            e.preventDefault();
-            document.getElementById('downloadTutorialModal').style.display = 'flex';
-        });
-        document.getElementById('closeTutorialBtn').addEventListener('click', function() {
-            document.getElementById('downloadTutorialModal').style.display = 'none';
-        });
-        document.getElementById('downloadTutorialModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                this.style.display = 'none';
-            }
-        });
-        function animateSparkles() {
-            document.querySelectorAll('.sparkle').forEach((s, i) => {
-                s.style.opacity = 0.6 + Math.sin(Date.now()/1000 + i)*0.3;
-            });
-            requestAnimationFrame(animateSparkles);
-        }
-        animateSparkles();
+
         document.querySelectorAll('.faq-item').forEach(item => {
             item.setAttribute('tabindex', '0');
             item.addEventListener('keydown', function(e) {
@@ -706,10 +857,10 @@
                 }
             });
         });
-        document.querySelector('.details-code').addEventListener('mouseenter', function() {
+        document.querySelector('.details-code')?.addEventListener('mouseenter', function() {
             this.style.background = '#ffe3e3';
         });
-        document.querySelector('.details-code').addEventListener('mouseleave', function() {
+        document.querySelector('.details-code')?.addEventListener('mouseleave', function() {
             this.style.background = '#fffbe6';
         });
         document.querySelector('.logo').addEventListener('click', function() {
@@ -731,6 +882,32 @@
             });
         });
         document.querySelector('.logo').setAttribute('aria-label', 'Golden AdBlocker Home');
+        function animateSparkles() {
+            document.querySelectorAll('.sparkle').forEach((s, i) => {
+                s.style.opacity = 0.6 + Math.sin(Date.now()/1000 + i)*0.3;
+            });
+            requestAnimationFrame(animateSparkles);
+        }
+        animateSparkles();
+
+        function detectBrowser() {
+            const ua = navigator.userAgent;
+            if (/Edg\//.test(ua)) return 'edge';
+            if (/OPR\//.test(ua) || /Opera/.test(ua)) return 'opera';
+            if (/Chrome\//.test(ua) && !/Edg\//.test(ua) && !/OPR\//.test(ua)) return 'chrome';
+            if (/Firefox\//.test(ua)) return 'firefox';
+            if (/Safari\//.test(ua) && !/Chrome\//.test(ua) && !/Chromium\//.test(ua)) return 'safari';
+            return null;
+        }
+        function highlightDetectedBrowser() {
+            browserBtns.forEach(btn => btn.classList.remove('shine'));
+            const detected = detectBrowser();
+            if (detected) {
+                const btn = document.querySelector('.browser-btn[data-browser="'+detected+'"]');
+                if (btn) btn.classList.add('shine');
+            }
+        }
+        window.highlightDetectedBrowser = highlightDetectedBrowser;
     </script>
 </body>
 </html>
