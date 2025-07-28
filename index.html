@@ -441,11 +441,8 @@
         .sparkle6 { top: 50%; right: 8px; width: 14px; height: 14px;}
         
     </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5514743147176708"
-     crossorigin="anonymous">
-    </script>
-</head>
 <body>
+    <!-- Sparkle SVGs for visual delight -->
     <svg class="sparkle sparkle1" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#f9d423" opacity="0.7"/><circle cx="12" cy="12" r="5" fill="#fffbe6" opacity="0.8"/></svg>
     <svg class="sparkle sparkle2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="#f9d423" opacity="0.7"/><circle cx="12" cy="12" r="3" fill="#fffbe6" opacity="0.8"/></svg>
     <svg class="sparkle sparkle3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7" fill="#f9d423" opacity="0.7"/><circle cx="12" cy="12" r="2" fill="#fffbe6" opacity="0.8"/></svg>
@@ -453,28 +450,30 @@
     <svg class="sparkle sparkle5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6" fill="#f9d423" opacity="0.7"/><circle cx="12" cy="12" r="2" fill="#fffbe6" opacity="0.8"/></svg>
     <svg class="sparkle sparkle6" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6" fill="#f9d423" opacity="0.7"/><circle cx="12" cy="12" r="2" fill="#fffbe6" opacity="0.8"/></svg>
     <header>
-        <div class="logo">
+        <div class="logo" aria-label="Golden AdBlocker Home" tabindex="0">
             Golden AdBlocker
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/YouTube_Premium_logo.svg/1200px-YouTube_Premium_logo.svg.png" alt="YouTube Premium Logo" style="height:32px;vertical-align:middle;margin-left:10px;">
         </div>
         <div class="subtitle">99% Video Ad Blocking &mdash; Undetected, Fast, Free</div>
-        <nav>
-            <a href="#download" class="active">Download</a>
-            <a href="#faq">FAQ</a>
-            <a href="#details">Details</a>
-            <a href="#features">Features</a>
+        <nav aria-label="Main navigation">
+            <a href="#download" class="active" tabindex="0">Download</a>
+            <a href="#faq" tabindex="0">FAQ</a>
+            <a href="#details" tabindex="0">Details</a>
+            <a href="#features" tabindex="0">Features</a>
+            <a href="#blog" tabindex="0">Blog</a>
+            <a href="#privacy" tabindex="0">Privacy Policy</a>
+            <a href="#terms" tabindex="0">Terms</a>
         </nav>
     </header>
-    <div class="container">
+    <main class="container">
         <section class="hero">
             <div class="hero-content">
-                <div class="hero-title">Block 99% of Video Ads, Undetected</div>
-                <div class="hero-desc">
+                <h1 class="hero-title">Block 99% of Video Ads, Undetected</h1>
+                <p class="hero-desc">
                     Golden AdBlocker is a powerful userscript that blocks video ads on YouTube! It works in a stealthy, undetectable way, ensuring you enjoy ad-free streaming without interruptions or detection. Fast, lightweight, and always free.
-                </div>
+                </p>
                 <div class="hero-actions">
-                    <a href="#download" class="btn" id="downloadNowBtn">Download Now</a>
-                    <a href="#faq" class="btn" style="background:linear-gradient(90deg,#ff4e50 0%,#f9d423 100%);">FAQ</a>
+                    <a href="#download" class="btn" id="downloadNowBtn" aria-label="Download Now">Download Now</a>
+                    <a href="#faq" class="btn" style="background:linear-gradient(90deg,#ff4e50 0%,#f9d423 100%);" aria-label="FAQ">FAQ</a>
                 </div>
                 <div>
                     <span style="font-size:1.1rem;color:#f9d423;font-weight:600;">Latest Version:</span>
@@ -485,50 +484,80 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/616/616494.png" alt="Golden AdBlocker Logo">
             </div>
         </section>
+        <section style="margin-bottom:24px;">
+            <div style="background:#fffbe6;border-radius:10px;padding:18px 22px;color:#888;font-size:1.05rem;">
+                <strong>Disclaimer:</strong> Golden AdBlocker is an independent project and is not affiliated, associated, authorized, endorsed by, or in any way officially connected with YouTube, Google LLC, or any of their subsidiaries or affiliates. All product and company names are trademarks™ or registered® trademarks of their respective holders. Use at your own risk.
+            </div>
+        </section>
         <section id="features" class="features">
-            <div class="feature-card">
+            <div class="feature-card" title="99% Video Ad Blocking">
                 <span class="feature-icon">🛡️</span>
                 <div class="feature-title">99% Video Ad Blocking</div>
                 <div class="feature-desc">Blocks almost all ads on YouTube. <b>1% of videos not supported:</b> videos on channels like FIFA, age-restricted content (e.g., gambling), or similar special cases.</div>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" title="Undetectable">
                 <span class="feature-icon">🕵️‍♂️</span>
                 <div class="feature-title">Undetectable</div>
                 <div class="feature-desc">Uses advanced stealth techniques to avoid detection by ad providers and websites.</div>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" title="Lightning Fast">
                 <span class="feature-icon">⚡</span>
                 <div class="feature-title">Lightning Fast</div>
                 <div class="feature-desc">Minimal impact on page load times. Optimized for speed and efficiency.</div>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" title="Auto Updates">
                 <span class="feature-icon">🔄</span>
                 <div class="feature-title">Auto Updates</div>
                 <div class="feature-desc">Always up-to-date with the latest ad-blocking techniques. No manual updates needed.</div>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" title="Privacy First">
                 <span class="feature-icon">🔒</span>
                 <div class="feature-title">Privacy First</div>
                 <div class="feature-desc">No tracking, no data collection. No stats are being collected!</div>
             </div>
-            <div class="feature-card">
+            <div class="feature-card" title="Easy Install">
                 <span class="feature-icon">🧑‍💻</span>
                 <div class="feature-title">Easy Install</div>
                 <div class="feature-desc">One-click install for Tampermonkey or Violentmonkey. No configuration required.</div>
             </div>
         </section>
+        <section id="blog" style="margin:54px 0 0 0;">
+            <div style="font-size:1.7rem;font-weight:700;color:#ff4e50;margin-bottom:24px;letter-spacing:1px;">Blog &amp; Updates</div>
+            <article style="background:#fffbe6;border-radius:10px;padding:22px 24px;margin-bottom:18px;box-shadow:0 2px 8px rgba(249,212,35,0.09);">
+                <h3 style="margin-top:0;color:#f9d423;">Why Golden AdBlocker is Different</h3>
+                <p style="color:#444;font-size:1.08rem;line-height:1.7;">
+                    Unlike generic ad blockers, Golden AdBlocker is built specifically for YouTube video ads. Our script uses a custom player and stealth injection, so you get uninterrupted viewing without annoying popups or detection warnings. We never collect your data, and updates are automatic.
+                </p>
+            </article>
+            <article style="background:#fffbe6;border-radius:10px;padding:22px 24px;margin-bottom:18px;box-shadow:0 2px 8px rgba(249,212,35,0.09);">
+                <h3 style="margin-top:0;color:#f9d423;">User Story: "I Finally Enjoy YouTube Again"</h3>
+                <blockquote style="color:#444;font-size:1.08rem;line-height:1.7;border-left:4px solid #f9d423;padding-left:12px;margin:0;"></blockquote>
+                    "I tried many ad blockers, but YouTube kept finding ways to show ads. Golden AdBlocker just works. No more interruptions, and my browser feels faster. Highly recommended for anyone tired of ads!"
+                    <br>
+                    <span style="color:#ff4e50;">- Alex, Chrome user</span>
+                </blockquote>
+            </article>
+            <article style="background:#fffbe6;border-radius:10px;padding:22px 24px;margin-bottom:18px;box-shadow:0 2px 8px rgba(249,212,35,0.09);">
+                <h3 style="margin-top:0;color:#f9d423;">Tips for Best Performance</h3>
+                <ul style="color:#444;font-size:1.08rem;line-height:1.7;">
+                    <li>Use Tampermonkey on Chrome or Safari for maximum compatibility.</li>
+                    <li>Enable Developer Mode in your browser's extensions settings.</li>
+                    <li>Restart your browser after installation for best results.</li>
+                </ul>
+            </article>
+        </section>
         <section id="download" class="download-section">
             <div class="download-title">Download Golden AdBlocker</div>
-            <a href="#" class="download-btn" id="downloadScriptBtn">Download Script</a>
+            <a href="#" class="download-btn" id="downloadScriptBtn" aria-label="Download Script">Download Script</a>
             <div class="download-desc" style="max-width:600px;margin:24px auto 0 auto;padding:18px 20px;background:#fffbe6;border-radius:10px;box-shadow:0 2px 8px rgba(249,212,35,0.09);font-size:1.08rem;line-height:1.7;">
-                <span style="color:#ff4e50;font-weight:600;">Easy installation in 3 steps:</span><br>
+                <span style="color:#ff4e50;font-weight:600;">Easy installation in 3 steps:</span>
                 <ol style="margin:12px 0 0 18px;padding:0;">
                     <li>Install <b>Tampermonkey</b> (recommended) or <b>Violentmonkey</b> for your browser.</li>
                     <li>Click the <b>Download Script</b> button above and follow the prompts to add Golden AdBlocker.</li>
                     <li>Reload YouTube and enjoy an ad-free experience instantly!</li>
                 </ol>
                 <div style="margin-top:10px;">
-                    <span style="color:#f9d423;font-weight:600;">Tips:</span> 
+                    <span style="color:#f9d423;font-weight:600;">Tips:</span>
                     <ul style="margin:6px 0 0 18px;padding:0;">
                         <li>For <b>Chrome</b> and <b>Safari</b>, use Tampermonkey for best compatibility.</li>
                         <li>On <b>iOS</b>, only Safari supports extensions like Tampermonkey.</li>
@@ -569,8 +598,7 @@
                         <span style="font-weight:600;color:#444;">Safari</span>
                     </button>
                 </div>
-                <div id="browserTutorial" style="display:none;animation:fadeInModal 0.4s;">
-                </div>
+                <div id="browserTutorial" style="display:none;animation:fadeInModal 0.4s;"></div>
                 <button id="closeBrowserModalBtn" style="display:block;margin:18px auto 0 auto;padding:10px 28px;font-size:1.1rem;font-weight:700;border-radius:8px;border:none;background:linear-gradient(90deg,#f9d423 0%,#ff4e50 100%);color:#fff;box-shadow:0 2px 8px rgba(255,78,80,0.13);cursor:pointer;">Close</button>
             </div>
         </div>
@@ -596,39 +624,39 @@
         <section id="faq" class="faq-section">
             <div class="faq-title">Frequently Asked Questions</div>
             <ul class="faq-list">
-                <li class="faq-item">
+                <li class="faq-item" tabindex="0" aria-expanded="false">
                     <div class="faq-question"><span class="faq-arrow">▶</span>How does Golden AdBlocker work?</div>
                     <div class="faq-answer">It uses a custom player which in ads dont load, giving you ad-free experience.</div>
                 </li>
-                <li class="faq-item">
+                <li class="faq-item" tabindex="0" aria-expanded="false">
                     <div class="faq-question"><span class="faq-arrow">▶</span>Is it really undetectable?</div>
                     <div class="faq-answer">Yes. The script mimics normal user behavior and avoids known detection methods used by ad providers.</div>
                 </li>
-                <li class="faq-item">
+                <li class="faq-item" tabindex="0" aria-expanded="false">
                     <div class="faq-question"><span class="faq-arrow">▶</span>Which browsers are supported?</div>
                     <div class="faq-answer">Any browser that supports Tampermonkey or Violentmonkey, including Chrome, Firefox, Edge, Opera, and Safari.<br><b>Note:</b> On Chrome and Safari, use Tampermonkey for best results. On iOS, only Safari supports extensions.</div>
                 </li>
-                <li class="faq-item">
+                <li class="faq-item" tabindex="0" aria-expanded="false">
                     <div class="faq-question"><span class="faq-arrow">▶</span>Does it block banner or popup ads?</div>
                     <div class="faq-answer">Golden AdBlocker blocks all ads, so yes, it blocks them as well.</div>
                 </li>
-                <li class="faq-item">
+                <li class="faq-item" tabindex="0" aria-expanded="false">
                     <div class="faq-question"><span class="faq-arrow">▶</span>Do i also have a premium icon?</div>
-                    <div class="faq-answer">Yes, absolutely! You have a premium icon in the top left instead of the Youtube logo!</div>
+                    <div class="faq-answer">No, becouse it causes a huge lag to many users, so it was unfortunatelly removed!</div>
                 </li>
-                <li class="faq-item">
+                <li class="faq-item" tabindex="0" aria-expanded="false">
                     <div class="faq-question"><span class="faq-arrow">▶</span>How do I update the script?</div>
                     <div class="faq-answer">Updates are automatic via Tampermonkey or Violentmonkey. You don't need to do anything.</div>
                 </li>
-                <li class="faq-item">
+                <li class="faq-item" tabindex="0" aria-expanded="false">
                     <div class="faq-question"><span class="faq-arrow">▶</span>Can I contribute or report issues?</div>
                     <div class="faq-answer">Yes! Visit our <a href="https://github.com/MaxikTheBest/goldenadblocker">GitHub page</a> to contribute or report bugs.</div>
                 </li>
-                <li class="faq-item">
+                <li class="faq-item" tabindex="0" aria-expanded="false">
                     <div class="faq-question"><span class="faq-arrow">▶</span>What should I do after installing?</div>
                     <div class="faq-answer">After installing the script, make sure to enable <b>Developer Mode</b> in your browser's extensions/add-ons settings and restart your browser to ensure the script works correctly.</div>
                 </li>
-                <li class="faq-item">
+                <li class="faq-item" tabindex="0" aria-expanded="false">
                     <div class="faq-question"><span class="faq-arrow">▶</span>Why do I need to pay for Tampermonkey on iPad/iOS?</div>
                     <div class="faq-answer">Apple charges high fees for distributing extensions and apps on iOS/iPadOS. Tampermonkey for iOS is a paid app due to these Apple fees. This is not our decision, but a requirement from Apple and the extension publisher.</div>
                 </li>
@@ -645,12 +673,42 @@
                 <li>No data, stats, or usage is being collected.</li>
             </ul>
             <div class="details-desc" style="margin-top:18px;">
-                <b>Note:</b> The actual script is highly advanced, using stealth and multi-site support for the best ad-free experience.
+                <strong>Note:</strong> The actual script is highly advanced, using stealth and multi-site support for the best ad-free experience.
             </div>
         </section>
-    </div>
+        <section id="privacy" style="margin:54px 0 0 0;">
+            <div style="font-size:1.7rem;font-weight:700;color:#f9d423;margin-bottom:24px;letter-spacing:1px;">Privacy Policy</div>
+            <div style="background:#fffbe6;border-radius:10px;padding:22px 24px;box-shadow:0 2px 8px rgba(249,212,35,0.09);color:#444;font-size:1.08rem;line-height:1.7;">
+                <strong>Golden AdBlocker does not collect, store, or transmit any personal data.</strong>
+                <ul>
+                    <li>No tracking, analytics, or cookies are used.</li>
+                    <li>No usage statistics are collected.</li>
+                    <li>All ad-blocking happens locally in your browser.</li>
+                </ul>
+                <p>
+                    We respect your privacy. Golden AdBlocker is designed to work entirely on your device, without sending any information to external servers. If you have questions, contact us via <a href="https://github.com/MaxikTheBest/goldenadblocker">GitHub</a>.
+                </p>
+            </div>
+        </section>
+        <section id="terms" style="margin:54px 0 0 0;">
+            <div style="font-size:1.7rem;font-weight:700;color:#f9d423;margin-bottom:24px;letter-spacing:1px;">Terms of Use</div>
+            <div style="background:#fffbe6;border-radius:10px;padding:22px 24px;box-shadow:0 2px 8px rgba(249,212,35,0.09);color:#444;font-size:1.08rem;line-height:1.7;">
+                <ul>
+                    <li>Golden AdBlocker is provided "as is" without warranty of any kind.</li>
+                    <li>Use at your own risk. We are not responsible for any damages or issues resulting from use.</li>
+                    <li>Golden AdBlocker is not affiliated with YouTube or Google LLC.</li>
+                    <li>Do not use Golden AdBlocker for unlawful purposes.</li>
+                    <li>By using this script, you agree to these terms.</li>
+                </ul>
+                <p>
+                    For questions or concerns, please visit our <a href="https://github.com/MaxikTheBest/goldenadblocker">GitHub page</a>.
+                </p>
+            </div>
+        </section>
+    </main>
     <footer>
-        &copy; 2025 Golden AdBlocker &mdash; <a href="https://github.com/MaxikTheBest/goldenadblocker">GitHub</a> &mdash; Made for Tampermonkey & Violentmonkey
+        &copy; 2025 Golden AdBlocker &mdash; <a href="https://github.com/MaxikTheBest/goldenadblocker">GitHub</a> &mdash; Made for Tampermonkey & Violentmonkey<br>
+        <span style="color:#888;font-size:0.98em;">Golden AdBlocker is not affiliated with YouTube or Google LLC.</span>
     </footer>
     <script>
         const browserTutorials = {
@@ -828,17 +886,23 @@
         });
         window.addEventListener('scroll', function() {
             const sections = ['download','faq','details','features'];
-            let found = false;
-            for (let id of sections) {
+            let currentSection = null;
+            let minDistance = Infinity;
+            sections.forEach(id => {
                 const el = document.getElementById(id);
-                if (el && el.getBoundingClientRect().top < 120) {
-                    document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
-                    document.querySelector('nav a[href="#'+id+'"]').classList.add('active');
-                    found = true;
+                if (el) {
+                    const rect = el.getBoundingClientRect();
+                    const distance = Math.abs(rect.top - 120);
+                    if (rect.top <= 120 && distance < minDistance) {
+                        minDistance = distance;
+                        currentSection = id;
+                    }
                 }
-            }
-            if (!found) {
-                document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
+            });
+            document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+            if (currentSection) {
+                const activeLink = document.querySelector('nav a[href="#'+currentSection+'"]');
+                if (activeLink) activeLink.classList.add('active');
             }
         });
         const downloadBtn = document.querySelector('.download-btn');
@@ -870,7 +934,7 @@
             window.scrollTo({top:0,behavior:'smooth'});
         });
         window.addEventListener('DOMContentLoaded', function() {
-            downloadBtn.focus();
+            downloadNowBtn.focus();
         });
         document.querySelectorAll('.btn,.download-btn').forEach(btn => {
             btn.setAttribute('aria-label', btn.textContent.trim());
@@ -968,7 +1032,7 @@
                                 <div style="font-size:1.6rem;font-weight:700;color:#ff4e50;margin-bottom:12px;">AdBlocker Detected</div>
                                 <div style="font-size:1.08rem;color:#444;margin-bottom:24px;line-height:1.6;">
                                     Please disable your adblocker to continue using Golden AdBlocker.<br>
-                                    Adblockers block essential scripts and may break the page.
+                                    Another adblockers can cause golden adblocker to not work properly.
                                 </div>
                                 <button id="refreshAdblockBtn" style="
                                     padding:14px 38px;
