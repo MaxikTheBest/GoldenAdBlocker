@@ -978,25 +978,37 @@
     </script>
      <script>
         window.addEventListener('DOMContentLoaded', function() {
-            var bait = document.createElement('div');
-            bait.className = 'adsbox ad-banner ad-banner-top ad-advertisement';
-            bait.style.cssText = 'width:1px;height:1px;position:absolute;left:-9999px;top:-9999px;pointer-events:none;z-index:-1;';
-            bait.innerHTML = '&nbsp;';
-            document.body.appendChild(bait);
+            var bait;
+            try {
+                bait = document.createElement('div');
+                bait.className = 'adsbox ad-banner ad-banner-top ad-advertisement';
+                bait.style.cssText = 'width:1px;height:1px;position:absolute;left:-9999px;top:-9999px;pointer-events:none;z-index:-1;';
+                bait.innerHTML = '&nbsp;';
+                document.body.appendChild(bait);
+            } catch (e) {
+                bait = null;
+            }
 
             setTimeout(function() {
                 var adBlocked = false;
-                if (
-                    !bait ||
-                    bait.offsetParent === null ||
-                    bait.offsetHeight === 0 ||
-                    bait.offsetWidth === 0 ||
-                    window.getComputedStyle(bait).display === 'none' ||
-                    window.getComputedStyle(bait).visibility === 'hidden'
-                ) {
+                if (!bait) {
                     adBlocked = true;
+                } else {
+                    try {
+                        if (
+                            bait.offsetParent === null ||
+                            bait.offsetHeight === 0 ||
+                            bait.offsetWidth === 0 ||
+                            window.getComputedStyle(bait).display === 'none' ||
+                            window.getComputedStyle(bait).visibility === 'hidden'
+                        ) {
+                            adBlocked = true;
+                        }
+                        document.body.removeChild(bait);
+                    } catch (e) {
+                        adBlocked = true;
+                    }
                 }
-                document.body.removeChild(bait);
 
                 if (adBlocked) {
                     document.body.innerHTML = '';
@@ -1006,7 +1018,7 @@
                             s.remove();
                         }
                     });
-                    // Generate a random ID for the popup
+                    // lol
                     var popupId = 'adblock-popup-' + Math.random().toString(36).substr(2, 9);
                     var btnId = 'refreshAdblockBtn-' + Math.random().toString(36).substr(2, 9);
                     var popup = document.createElement('div');
