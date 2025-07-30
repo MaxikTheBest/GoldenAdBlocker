@@ -976,121 +976,117 @@
         }
         window.highlightDetectedBrowser = highlightDetectedBrowser;
     </script>
-    <script>
-    window.addEventListener('DOMContentLoaded', function() {
-        var bait, baitId = 'adblock-bait-' + Math.random().toString(36).substr(2, 8);
-        try {
-            bait = document.createElement('div');
-            bait.id = baitId;
-            bait.className = 'adsbox ad-banner ad-banner-top ad-advertisement';
-            bait.style.cssText = 'width:1px;height:1px;position:absolute;left:-9999px;top:-9999px;pointer-events:none;z-index:-1;';
-            bait.innerHTML = '<span id="adblock-bait-txt-' + Math.random().toString(36).substr(2, 8) + '">&nbsp;</span>';
-            document.body.appendChild(bait);
-        } catch (e) {
-            bait = null;
-        }
+     <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var bait;
+            try {
+                bait = document.createElement('div');
+                bait.className = 'adsbox ad-banner ad-banner-top ad-advertisement';
+                bait.style.cssText = 'width:1px;height:1px;position:absolute;left:-9999px;top:-9999px;pointer-events:none;z-index:-1;';
+                bait.innerHTML = '&nbsp;';
+                document.body.appendChild(bait);
+            } catch (e) {
+                bait = null;
+            }
 
-        setTimeout(function() {
-            var adBlocked = false;
-            if (!bait) {
-                adBlocked = true;
-            } else {
-                try {
-                    var style = window.getComputedStyle(bait);
-                    if (
-                        bait.offsetParent === null ||
-                        bait.offsetHeight === 0 ||
-                        bait.offsetWidth === 0 ||
-                        style.display === 'none' ||
-                        style.visibility === 'hidden'
-                    ) {
+            setTimeout(function() {
+                var adBlocked = false;
+                if (!bait) {
+                    adBlocked = true;
+                } else {
+                    try {
+                        if (
+                            bait.offsetParent === null ||
+                            bait.offsetHeight === 0 ||
+                            bait.offsetWidth === 0 ||
+                            window.getComputedStyle(bait).display === 'none' ||
+                            window.getComputedStyle(bait).visibility === 'hidden'
+                        ) {
+                            adBlocked = true;
+                        }
+                        document.body.removeChild(bait);
+                    } catch (e) {
                         adBlocked = true;
                     }
-                    document.body.removeChild(bait);
-                } catch (e) {
-                    adBlocked = true;
                 }
-            }
 
-            if (adBlocked) {
-                document.body.innerHTML = '';
-                var scripts = document.querySelectorAll('script');
-                scripts.forEach(function(s) {
-                    if (!s.src && !s.textContent.includes('Adblock detection script')) {
-                        s.remove();
-                    }
-                });
-                var popupId = 'adblock-popup-' + Math.random().toString(36).substr(2, 9);
-                var btnId = 'refreshAdblockBtn-' + Math.random().toString(36).substr(2, 9);
-                var logoId = 'adblock-logo-' + Math.random().toString(36).substr(2, 9);
-                var titleId = 'adblock-title-' + Math.random().toString(36).substr(2, 9);
-                var descId = 'adblock-desc-' + Math.random().toString(36).substr(2, 9);
-                var styleId = 'adblock-style-' + Math.random().toString(36).substr(2, 9);
-                var popup = document.createElement('div');
-                popup.id = popupId;
-                popup.innerHTML = `
-                    <div id="${popupId}-bg" style="
-                        position:fixed;
-                        top:0;left:0;width:100vw;height:100vh;
-                        background:rgba(0,0,0,0.55);
-                        display:flex;align-items:center;justify-content:center;
-                        z-index:99999;
-                        animation:fadeInBg 0.5s;
-                    ">
-                        <div id="${popupId}-box" style="
-                            background:#fffbe6;
-                            border-radius:18px;
-                            box-shadow:0 8px 32px rgba(255,78,80,0.18);
-                            padding:48px 32px 32px 32px;
-                            max-width:380px;
-                            width:95%;
-                            text-align:center;
-                            animation:fadeInPopup 0.6s;
-                            position:relative;
+                if (adBlocked) {
+                    document.body.innerHTML = '';
+                    var scripts = document.querySelectorAll('script');
+                    scripts.forEach(function(s) {
+                        if (!s.src && !s.textContent.includes('Adblock detection script')) {
+                            s.remove();
+                        }
+                    });
+                    // lol
+                    var popupId = 'adblock-popup-' + Math.random().toString(36).substr(2, 9);
+                    var btnId = 'refreshAdblockBtn-' + Math.random().toString(36).substr(2, 9);
+                    var popup = document.createElement('div');
+                    popup.id = popupId;
+                    popup.innerHTML = `
+                        <div style="
+                            position:fixed;
+                            top:0;left:0;width:100vw;height:100vh;
+                            background:rgba(0,0,0,0.55);
+                            display:flex;align-items:center;justify-content:center;
+                            z-index:99999;
+                            animation:fadeInBg 0.5s;
                         ">
-                            <img id="${logoId}" src="https://cdn-icons-png.flaticon.com/512/616/616494.png" alt="Golden AdBlocker Logo" style="width:72px;height:72px;border-radius:50%;box-shadow:0 2px 12px #f9d423;margin-bottom:18px;">
-                            <div id="${titleId}" style="font-size:1.6rem;font-weight:700;color:#ff4e50;margin-bottom:12px;">AdBlocker Detected</div>
-                            <div id="${descId}" style="font-size:1.08rem;color:#444;margin-bottom:24px;line-height:1.6;">
-                                <span id="${descId}-txt1">Please disable your adblocker to continue using Golden AdBlocker.</span><br>
-                                <span id="${descId}-txt2">Other adblockers can cause Golden AdBlocker to not work properly.</span>
+                            <div style="
+                                background:#fffbe6;
+                                border-radius:18px;
+                                box-shadow:0 8px 32px rgba(255,78,80,0.18);
+                                padding:48px 32px 32px 32px;
+                                max-width:380px;
+                                width:95%;
+                                text-align:center;
+                                animation:fadeInPopup 0.6s;
+                                position:relative;
+                            ">
+                                <img src="https://cdn-icons-png.flaticon.com/512/616/616494.png" alt="Golden AdBlocker Logo" style="width:72px;height:72px;border-radius:50%;box-shadow:0 2px 12px #f9d423;margin-bottom:18px;">
+                                <div style="font-size:1.6rem;font-weight:700;color:#ff4e50;margin-bottom:12px;">AdBlocker Detected</div>
+                                <div style="font-size:1.08rem;color:#444;margin-bottom:24px;line-height:1.6;">
+                                    Please disable your adblocker to continue using Golden AdBlocker.<br>
+                                    Another adblockers can cause golden adblocker to not work properly.
+                                </div>
+                                <button id="${btnId}" style="
+                                    padding:14px 38px;
+                                    font-size:1.15rem;
+                                    font-weight:700;
+                                    border-radius:8px;
+                                    border:none;
+                                    background:linear-gradient(90deg,#f9d423 0%,#ff4e50 100%);
+                                    color:#fff;
+                                    box-shadow:0 2px 12px rgba(255,78,80,0.13);
+                                    cursor:pointer;
+                                    text-shadow:1px 1px 0 #f9d423;
+                                    transition:background 0.2s, box-shadow 0.2s;
+                                ">Refresh Page</button>
                             </div>
-                            <button id="${btnId}" style="
-                                padding:14px 38px;
-                                font-size:1.15rem;
-                                font-weight:700;
-                                border-radius:8px;
-                                border:none;
-                                background:linear-gradient(90deg,#f9d423 0%,#ff4e50 100%);
-                                color:#fff;
-                                box-shadow:0 2px 12px rgba(255,78,80,0.13);
-                                cursor:pointer;
-                                text-shadow:1px 1px 0 #f9d423;
-                                transition:background 0.2s, box-shadow 0.2s;
-                            ">Refresh Page</button>
                         </div>
-                    </div>
-                    <style id="${styleId}">
-                        @keyframes fadeInBg {
-                            from { opacity: 0;}
-                            to { opacity: 1;}
-                        }
-                        @keyframes fadeInPopup {
-                            from { opacity: 0; transform: scale(0.9);}
-                            to { opacity: 1; transform: scale(1);}
-                        }
-                        [id^="refreshAdblockBtn-"]:focus {
-                            outline:2px solid #ff4e50;
-                            outline-offset:2px;
-                        }
-                    </style>
-                `;
-                document.body.appendChild(popup);
-                document.getElementById(btnId).onclick = function() {
-                    location.reload();
-                };
-            }
-        }, 1);
-    });
+                        <style>
+                            @keyframes fadeInBg {
+                                from { opacity: 0;}
+                                to { opacity: 1;}
+                            }
+                            @keyframes fadeInPopup {
+                                from { opacity: 0; transform: scale(0.9);}
+                                to { opacity: 1; transform: scale(1);}
+                            }
+                            /* Use attribute selector for button focus */
+                            [id^="refreshAdblockBtn-"]:focus {
+                                outline:2px solid #ff4e50;
+                                outline-offset:2px;
+                            }
+                        </style>
+                    `;
+                    document.body.appendChild(popup);
+                    document.getElementById(btnId).onclick = function() {
+                        location.reload();
+                    };
+                }
+            }, 300);
+        });
     </script>
 </body>
 </html>
