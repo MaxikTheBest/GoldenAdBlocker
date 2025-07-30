@@ -1006,8 +1006,11 @@
                             s.remove();
                         }
                     });
+                    // Generate a random ID for the popup
+                    var popupId = 'adblock-popup-' + Math.random().toString(36).substr(2, 9);
+                    var btnId = 'refreshAdblockBtn-' + Math.random().toString(36).substr(2, 9);
                     var popup = document.createElement('div');
-                    popup.id = 'adblock-popup';
+                    popup.id = popupId;
                     popup.innerHTML = `
                         <div style="
                             position:fixed;
@@ -1034,7 +1037,7 @@
                                     Please disable your adblocker to continue using Golden AdBlocker.<br>
                                     Another adblockers can cause golden adblocker to not work properly.
                                 </div>
-                                <button id="refreshAdblockBtn" style="
+                                <button id="${btnId}" style="
                                     padding:14px 38px;
                                     font-size:1.15rem;
                                     font-weight:700;
@@ -1058,14 +1061,15 @@
                                 from { opacity: 0; transform: scale(0.9);}
                                 to { opacity: 1; transform: scale(1);}
                             }
-                            #adblock-popup button:focus {
+                            /* Use attribute selector for button focus */
+                            [id^="refreshAdblockBtn-"]:focus {
                                 outline:2px solid #ff4e50;
                                 outline-offset:2px;
                             }
                         </style>
                     `;
                     document.body.appendChild(popup);
-                    document.getElementById('refreshAdblockBtn').onclick = function() {
+                    document.getElementById(btnId).onclick = function() {
                         location.reload();
                     };
                 }
