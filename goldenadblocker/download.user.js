@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         GoldenAdblocker
 // @namespace    https://ilomero.com/
-// @version      1.2.3
-// @description  Removes 99% of ads from YouTube :) auto-loading the latest version.
-// @author       Ilomero.com inspired by goodtube!
+// @version      1.2.4
+// @description  Removes 99% of ads from YouTube :) auto-loading the latest version. (added v5 loader, that is much better and faster than v4 and more stable)
+// @author       Ilomero.com
 // @updateURL    https://ilomero.com/goldenadblocker/download.user.js
 // @downloadURL  https://ilomero.com/goldenadblocker/download.user.js
 // @match        *://m.youtube.com/*
