@@ -15,7 +15,7 @@
 ## Download
 
 You can download the latest release here:  
-[**Download GoldenAdblocker**](ilomero.com/goldenadblocker/download.user.js)  
+[**Download GoldenAdblocker**](https://ilomero.com/goldenadblocker/download.user.js)  
 
 ---
 
