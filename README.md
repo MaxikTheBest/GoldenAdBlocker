@@ -25,7 +25,7 @@ You can download the latest release here:
 1. Install a userscript manager like [Tampermonkey](https://www.tampermonkey.net/) or [Greasemonkey](https://www.greasespot.net/).
 2. Download the GoldenAdblocker script from the link above.
 3. Make sure it is enabled (it should be by default).
-4. Go to redit and reload it if you didnt already.
+4. Go to youtube and reload it if you didnt already.
 5. Turn off conflict extensions.
 6. ENJOY!
 
