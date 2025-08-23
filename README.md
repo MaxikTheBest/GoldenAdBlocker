@@ -47,7 +47,7 @@ You can download the latest release here:
 
 ## GoodTube simularity 
 
-This adblocker uses a similar technique as goodtube, but it has differences. You can use which ever you liked to use. This is just without some menus, short deletion, etc.
-Similar launcher for best compatibility.
+- This adblocker uses a similar technique as goodtube, but it has differences. You can use which ever you like to use. This is just without some menus, short deletion, etc.
+- Similar launcher for best compatibility.
 ---
   
