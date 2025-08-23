@@ -15,7 +15,7 @@
 ## Download
 
 You can download the latest release here:  
-[**Download RedditAdblocker**](ilomero.com/goldenadblocker/download.user.js)  
+[**Download GoldenAdblocker**](ilomero.com/goldenadblocker/download.user.js)  
 
 ---
 
@@ -23,7 +23,7 @@ You can download the latest release here:
 
 ### Browser Extension / Userscript
 1. Install a userscript manager like [Tampermonkey](https://www.tampermonkey.net/) or [Greasemonkey](https://www.greasespot.net/).
-2. Download the RedditAdblocker script from the link above.
+2. Download the GoldenAdblocker script from the link above.
 3. Make sure it is enabled (it should be by default).
 4. Go to redit and reload it if you didnt already.
 5. Turn off conflict extensions.
@@ -35,14 +35,14 @@ You can download the latest release here:
 
 - **Enable/Disable:** Turn GoldenAdblocker on or off through your userscript manager or application interface.
 - **Customize Filters:** Soon...
-- **Support for Reddit Apps:** Works best on desktop browsers.
+- **Support for Youtube Apps:** Works best on desktop browsers.
 
 ---
 
 ## Troubleshooting
 
 - **Ads still showing:** Make sure your userscript manager is active and the script is enabled.
-- **Conflicts with other extensions:** Temporarily disable other Reddit-related extensions to check compatibility.
+- **Conflicts with other extensions:** Temporarily disable other Youtube-related extensions to check compatibility.
 - **Fell free to open an issue if you need:** Click issues and open one
 
 ## GoodTube simularity 
